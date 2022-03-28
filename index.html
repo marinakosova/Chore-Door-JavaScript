@@ -1,21 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Chore Door JavaScript game">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Maryna Kosau">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chore Door!</title>
     <link href="./style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+    <!--Logo -->
     <div class="header">
-        <img src="https://content.codecademy.com/projects/chore-door/images/logo.svg" />
+        <img src="https://content.codecademy.com/projects/chore-door/images/logo.svg" alt="logo image" />
     </div>
+    <!--Instructions bullets -->
     <div class="title-row">
-        <img src="https://content.codecademy.com/projects/chore-door/images/star.svg" />
+        <img src="https://content.codecademy.com/projects/chore-door/images/star.svg" alt="star image" />
         <p class="instructions-title">Instructions</p>
-        <img src="https://content.codecademy.com/projects/chore-door/images/star.svg" />
+        <img src="https://content.codecademy.com/projects/chore-door/images/star.svg" alt="star image" />
     </div>
+    <!--Instructions table -->
     <table class="instructions-row">
         <tr>
             <td class="instructions-number">1</td>
@@ -23,21 +31,17 @@
                 Hiding behind one of these doors is the ChoreBot.
             </td>
         </tr>
-
         <tr>
             <td class="instructions-number">2</td>
             <td class="instructions-text">
                 Your mission is to open all of the doors without running into the ChoreBot.
             </td>
+        </tr <tr>
+        <td class="instructions-number">3</td>
+        <td class="instructions-text">
+            If you manage to avoid the ChoreBot until you open the very last door, you win!
+        </td>
         </tr>
-
-        <tr>
-            <td class="instructions-number">3</td>
-            <td class="instructions-text">
-                If you manage to avoid the ChoreBot until you open the very last door, you win!
-            </td>
-        </tr>
-
         <tr>
             <td class="instructions-number">4</td>
             <td class="instructions-text">
@@ -45,12 +49,13 @@
             </td>
         </tr>
     </table>
-
+    <!--Closed Doors -->
     <div class="door-row">
-        <img id="door1" class="door-frame" src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg" />
-        <img id="door2" class="door-frame" src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg" />
-        <img id="door3" class="door-frame" src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg" />
+        <img id="door1" class="door-frame" src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg" alt="closed door image" />
+        <img id="door2" class="door-frame" src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg" alt="closed door image" />
+        <img id="door3" class="door-frame" src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg" alt="closed door image" />
     </div>
+    <!--Button -->
     <div id="start" class="start-row">
         Good luck!
     </div>
