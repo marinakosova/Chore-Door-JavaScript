@@ -7,7 +7,7 @@ let spaceDoorPath = 'https://content.codecademy.com/projects/chore-door/images/s
 let numClosedDoors = 3;
 let openDoor1, openDoor2, openDoor3;
 let closedDoorPath = 'https://content.codecademy.com/projects/chore-door/images/closed_door.svg';
-const startButton = document.getElementById('start');
+let startButton = document.getElementById('start');
 let currentlyPlaying = true;
 
 const isClicked = (door) => {
@@ -31,7 +31,7 @@ const playDoor = (door) => {
     if (numClosedDoors === 0) {
         gameOver('win');
     } else if (isBot(door)) {
-        gameOver();
+        gameOver('lose');
     }
 }
 
